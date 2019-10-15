@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TextfieldTableViewCell" customModule="SampleAppWithComponents" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Hl4-d9-HF0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="86.5"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thP-6e-6jL">
+                                <rect key="frame" x="-50" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="iKu-ix-hjJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="oRD-AT-qa1"/>
+                                </constraints>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qPp-hu-Jsv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="77.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ze3-gU-tV9">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0E7-6O-Ki3" customClass="RMTextfieldView" customModule="SampleAppWithComponents" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20.5" width="320" height="57"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Hl4-d9-HF0" secondAttribute="bottom" id="ODr-Mc-9Dp"/>
+                    <constraint firstItem="Hl4-d9-HF0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="WKB-Jm-2KW"/>
+                    <constraint firstItem="Hl4-d9-HF0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fQ5-8C-paJ"/>
+                    <constraint firstAttribute="trailing" secondItem="Hl4-d9-HF0" secondAttribute="trailing" id="qWq-us-KGb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottom" destination="ODr-Mc-9Dp" id="3d2-sw-g4d"/>
+                <outlet property="btnInfo" destination="thP-6e-6jL" id="u3z-tt-Yp1"/>
+                <outlet property="lblTitle" destination="ze3-gU-tV9" id="4eo-4B-G7L"/>
+                <outlet property="leading" destination="WKB-Jm-2KW" id="01e-7U-x7u"/>
+                <outlet property="textfield" destination="0E7-6O-Ki3" id="mqt-uV-D6Z"/>
+                <outlet property="top" destination="fQ5-8C-paJ" id="5qm-j0-gh1"/>
+                <outlet property="trailing" destination="qWq-us-KGb" id="NrU-5o-RSA"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="120.5"/>
+        </tableViewCell>
+    </objects>
+</document>
