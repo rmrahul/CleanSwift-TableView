@@ -17,7 +17,7 @@ protocol LoginDisplayLogic: class{
     func displaySomething(viewModel: Login.Something.ViewModel)
     func displayUI(viewModel: Login.UI.ViewModel)
     func displayValidationErrors(viewModel : Login.Validate.ViewModel)
-    
+    func displayCreateProfile(viewModel : Login.SignIn.ViewModel)
 }
 
 class LoginViewController: UIViewController, LoginDisplayLogic, UITableViewDataSource, UITableViewDelegate, LabelTableViewCellDelegate,NVActivityIndicatorViewable{
@@ -129,6 +129,10 @@ class LoginViewController: UIViewController, LoginDisplayLogic, UITableViewDataS
     func displayUI(viewModel: Login.UI.ViewModel) {
         cellConfigs = viewModel.cellConfigs
         tableview.reloadData()
+    }
+    
+    func displayCreateProfile(viewModel : Login.SignIn.ViewModel){
+        router?.routeToCreateProfile()
     }
     
     func displayValidationErrors(viewModel: Login.Validate.ViewModel) {

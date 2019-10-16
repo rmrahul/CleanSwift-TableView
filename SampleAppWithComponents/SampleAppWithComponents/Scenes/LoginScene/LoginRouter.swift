@@ -15,6 +15,7 @@ import UIKit
 @objc protocol LoginRoutingLogic
 {
   //func routeToSomewhere(segue: UIStoryboardSegue?)
+    func routeToCreateProfile()
 }
 
 protocol LoginDataPassing
@@ -57,4 +58,26 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing
   //{
   //  destination.name = source.name
   //}
+    
+    func routeToCreateProfile(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let destinationVC = storyboard.instantiateViewController(withIdentifier: "CreateProfileViewController") as! CreateProfileViewController
+       var destinationDS = destinationVC.router!.dataStore!
+       passDataToCreateProfile(source: dataStore!, destination: &destinationDS)
+       navigateToCreateProfile(source: viewController!, destination: destinationVC)
+    }
+    
+    // MARK: Navigation
+    
+    func navigateToCreateProfile(source: LoginViewController, destination: CreateProfileViewController)
+    {
+      //source.show(destination, sender: nil)
+        source.navigationController?.pushViewController(destination, animated: true)
+    }
+    
+    // MARK: Passing data
+    
+    func passDataToCreateProfile(source: LoginDataStore, destination: inout CreateProfileDataStore){
+      //destination.name = source.name
+    }
 }

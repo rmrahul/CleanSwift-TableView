@@ -16,6 +16,7 @@ protocol LoginPresentationLogic{
     func presentSomething(response: Login.Something.Response)
     func presentUI(response: Login.UI.Response)
     func presentValidationResult(response : Login.Validate.Response)
+    func presentSignInAction(response : Login.SignIn.Response)
 }
 
 class LoginPresenter: LoginPresentationLogic{
@@ -60,6 +61,12 @@ class LoginPresenter: LoginPresentationLogic{
         
         viewController?.displayValidationErrors(viewModel: viewModel)
     }
+    
+    func presentSignInAction(response : Login.SignIn.Response){
+        let vm = Login.SignIn.ViewModel()
+        viewController?.displayCreateProfile(viewModel: vm)
+    }
+    
     private func getCellConfig(types : [Login.UIComponents]?) -> [(Login.UIComponents, BaseCellConfig)]?{
         stringFile = strings()
         

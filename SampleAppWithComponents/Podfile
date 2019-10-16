@@ -8,8 +8,8 @@ target 'SampleAppWithComponents' do
   # Pods for SampleAppWithComponents
   pod 'Validator'
   pod 'TTTAttributedLabel', '2.0.0'
-  pod 'DLRadioButton', '1.4.12'
   pod 'NVActivityIndicatorView'
   pod 'SwiftHEXColors'
+  pod 'IQKeyboardManagerSwift'
 
 end

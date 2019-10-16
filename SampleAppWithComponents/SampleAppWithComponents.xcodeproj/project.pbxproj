@@ -37,6 +37,12 @@
 		C338202A233466F0006D7158 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3382029233466F0006D7158 /* NavigationBar.swift */; };
 		C338202F2334DE4D006D7158 /* ValidationRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338202E2334DE4D006D7158 /* ValidationRules.swift */; };
 		C33820312334DE56006D7158 /* ValidationWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33820302334DE56006D7158 /* ValidationWorker.swift */; };
+		C373AED22357145800F462B3 /* CreateProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373AECC2357145800F462B3 /* CreateProfilePresenter.swift */; };
+		C373AED32357145800F462B3 /* CreateProfileWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373AECD2357145800F462B3 /* CreateProfileWorker.swift */; };
+		C373AED42357145800F462B3 /* CreateProfileRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373AECE2357145800F462B3 /* CreateProfileRouter.swift */; };
+		C373AED52357145800F462B3 /* CreateProfileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373AECF2357145800F462B3 /* CreateProfileModels.swift */; };
+		C373AED62357145800F462B3 /* CreateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373AED02357145800F462B3 /* CreateProfileViewController.swift */; };
+		C373AED72357145800F462B3 /* CreateProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C373AED12357145800F462B3 /* CreateProfileInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +80,12 @@
 		C3382029233466F0006D7158 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
 		C338202E2334DE4D006D7158 /* ValidationRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRules.swift; sourceTree = "<group>"; };
 		C33820302334DE56006D7158 /* ValidationWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationWorker.swift; sourceTree = "<group>"; };
+		C373AECC2357145800F462B3 /* CreateProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfilePresenter.swift; sourceTree = "<group>"; };
+		C373AECD2357145800F462B3 /* CreateProfileWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileWorker.swift; sourceTree = "<group>"; };
+		C373AECE2357145800F462B3 /* CreateProfileRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileRouter.swift; sourceTree = "<group>"; };
+		C373AECF2357145800F462B3 /* CreateProfileModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileModels.swift; sourceTree = "<group>"; };
+		C373AED02357145800F462B3 /* CreateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileViewController.swift; sourceTree = "<group>"; };
+		C373AED12357145800F462B3 /* CreateProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProfileInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +146,7 @@
 		C3381F3723345D44006D7158 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C373AECB2357144300F462B3 /* CreateProfile */,
 				C3381F3D23345D9E006D7158 /* LoginScene */,
 			);
 			name = Scenes;
@@ -225,6 +238,19 @@
 				C33820302334DE56006D7158 /* ValidationWorker.swift */,
 			);
 			path = Validators;
+			sourceTree = "<group>";
+		};
+		C373AECB2357144300F462B3 /* CreateProfile */ = {
+			isa = PBXGroup;
+			children = (
+				C373AECC2357145800F462B3 /* CreateProfilePresenter.swift */,
+				C373AECD2357145800F462B3 /* CreateProfileWorker.swift */,
+				C373AECE2357145800F462B3 /* CreateProfileRouter.swift */,
+				C373AECF2357145800F462B3 /* CreateProfileModels.swift */,
+				C373AED02357145800F462B3 /* CreateProfileViewController.swift */,
+				C373AED12357145800F462B3 /* CreateProfileInteractor.swift */,
+			);
+			path = CreateProfile;
 			sourceTree = "<group>";
 		};
 		E74BE9571C1B72B81081A3C6 /* Pods */ = {
@@ -359,8 +385,11 @@
 			files = (
 				C338202F2334DE4D006D7158 /* ValidationRules.swift in Sources */,
 				C3381F9723345DED006D7158 /* SeperatorTableViewCell.swift in Sources */,
+				C373AED22357145800F462B3 /* CreateProfilePresenter.swift in Sources */,
+				C373AED62357145800F462B3 /* CreateProfileViewController.swift in Sources */,
 				C3381FAB23345DED006D7158 /* ButtonTableViewCell.swift in Sources */,
 				C33820272334652B006D7158 /* LoginViewController.swift in Sources */,
+				C373AED32357145800F462B3 /* CreateProfileWorker.swift in Sources */,
 				C33820312334DE56006D7158 /* ValidationWorker.swift in Sources */,
 				C338202A233466F0006D7158 /* NavigationBar.swift in Sources */,
 				C33820232334652B006D7158 /* LoginPresenter.swift in Sources */,
@@ -368,11 +397,14 @@
 				C33820262334652B006D7158 /* LoginModels.swift in Sources */,
 				C3381F2823345B85006D7158 /* ViewController.swift in Sources */,
 				C3381FB823345DED006D7158 /* LabelTableViewCell.swift in Sources */,
+				C373AED52357145800F462B3 /* CreateProfileModels.swift in Sources */,
 				C3381F9D23345DED006D7158 /* TextfieldTableViewCell.swift in Sources */,
 				C3381FB023345DED006D7158 /* ImageTableViewCell.swift in Sources */,
 				C3382019233463DB006D7158 /* RMTextfieldView.swift in Sources */,
+				C373AED72357145800F462B3 /* CreateProfileInteractor.swift in Sources */,
 				C3381F9823345DED006D7158 /* BaseCellConfig.swift in Sources */,
 				C338201C23346486006D7158 /* UIView.swift in Sources */,
+				C373AED42357145800F462B3 /* CreateProfileRouter.swift in Sources */,
 				C33820242334652B006D7158 /* LoginWorker.swift in Sources */,
 				C3381F2623345B85006D7158 /* AppDelegate.swift in Sources */,
 				C33820282334652B006D7158 /* LoginInteractor.swift in Sources */,

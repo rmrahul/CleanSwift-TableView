@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DLRadioButton" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftHEXColors" "${PODS_CONFIGURATION_BUILD_DIR}/TTTAttributedLabel" "${PODS_CONFIGURATION_BUILD_DIR}/Validator"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftHEXColors" "${PODS_CONFIGURATION_BUILD_DIR}/TTTAttributedLabel" "${PODS_CONFIGURATION_BUILD_DIR}/Validator"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/DLRadioButton/DLRadioButton.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftHEXColors/SwiftHEXColors.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Validator/Validator.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftHEXColors/SwiftHEXColors.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/TTTAttributedLabel/TTTAttributedLabel.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/Validator/Validator.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "CoreText" -framework "DLRadioButton" -framework "NVActivityIndicatorView" -framework "QuartzCore" -framework "SwiftHEXColors" -framework "TTTAttributedLabel" -framework "UIKit" -framework "Validator"
+OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "CoreText" -framework "Foundation" -framework "IQKeyboardManagerSwift" -framework "NVActivityIndicatorView" -framework "QuartzCore" -framework "SwiftHEXColors" -framework "TTTAttributedLabel" -framework "UIKit" -framework "Validator"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

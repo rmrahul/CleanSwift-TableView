@@ -10,8 +10,7 @@
 #endif
 #endif
 
-#import "DLRadioButton.h"
 
-FOUNDATION_EXPORT double DLRadioButtonVersionNumber;
-FOUNDATION_EXPORT const unsigned char DLRadioButtonVersionString[];
+FOUNDATION_EXPORT double IQKeyboardManagerSwiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char IQKeyboardManagerSwiftVersionString[];
 

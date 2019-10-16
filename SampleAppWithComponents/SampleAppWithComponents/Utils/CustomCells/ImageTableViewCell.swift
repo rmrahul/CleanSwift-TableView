@@ -18,7 +18,6 @@ struct ImageTableViewCellConfig : BaseCellConfig {
 }
 
 class ImageTableViewCell: UITableViewCell {
-    
     @IBOutlet weak var height: NSLayoutConstraint!
     @IBOutlet weak var width: NSLayoutConstraint!
     @IBOutlet weak var stackview: UIStackView!
@@ -27,16 +26,6 @@ class ImageTableViewCell: UITableViewCell {
     @IBOutlet weak var trailing: NSLayoutConstraint!
     @IBOutlet weak var top: NSLayoutConstraint!
     @IBOutlet weak var imgview: UIImageView!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
-    }
     
     func configureCell(config : ImageTableViewCellConfig?){
         if let insets = config?.insets  {
@@ -61,6 +50,16 @@ class ImageTableViewCell: UITableViewCell {
         if let ratio = config?.aspectRatio{
             imgview.contentMode = ratio
         }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+    
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        // Configure the view for the selected state
     }
     
 }

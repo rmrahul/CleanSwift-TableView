@@ -1,5 +1,5 @@
 PODS:
-  - DLRadioButton (1.4.12)
+  - IQKeyboardManagerSwift (6.4.2)
   - NVActivityIndicatorView (4.7.0):
     - NVActivityIndicatorView/Presenter (= 4.7.0)
   - NVActivityIndicatorView/Presenter (4.7.0)
@@ -8,7 +8,7 @@ PODS:
   - Validator (3.2.1)
 
 DEPENDENCIES:
-  - DLRadioButton (= 1.4.12)
+  - IQKeyboardManagerSwift
   - NVActivityIndicatorView
   - SwiftHEXColors
   - TTTAttributedLabel (= 2.0.0)
@@ -16,19 +16,19 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - DLRadioButton
+    - IQKeyboardManagerSwift
     - NVActivityIndicatorView
     - SwiftHEXColors
     - TTTAttributedLabel
     - Validator
 
 SPEC CHECKSUMS:
-  DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
+  IQKeyboardManagerSwift: 79a3ec200dfb41cb66a89b8575417b5378107c5d
   NVActivityIndicatorView: b19ddab2576f805cbe0fb2306cba3476e09a1dea
   SwiftHEXColors: 7cc78ce189ddaff81f2ec1259b6b1dffdcda7643
   TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
   Validator: 80a6f567220c962dfd2d9928ae98a8c1d164f6f4
 
-PODFILE CHECKSUM: 2b79446e0954f8296743cc64853e573a74d3ae07
+PODFILE CHECKSUM: cc1aded18fb6064732a397901c7658aedf7d0ee7
 
 COCOAPODS: 1.7.5

@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
 
-        self.present(destinationVC, animated: true, completion: nil)
+        self.navigationController?.pushViewController(destinationVC, animated: true)
     }
     
 }
